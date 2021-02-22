@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Simple project for portfolio",
   "scripts": {
-    "postmanTests": "newman run ./com.typicode.jsonplaceholder.postman_collection.json -e com.typicode.jsonplaceholder.postman_environment.json --reporters cli,json --reporter-json-export newmanReport.xml"
+    "postmanTests": "newman run ./com.typicode.jsonplaceholder.postman_collection.json -e com.typicode.jsonplaceholder.postman_environment.json --reporters cli,junit --reporter-json-export newmanReport.xml"
   },
   "author": "VKontsov",
   "dependencies": {
