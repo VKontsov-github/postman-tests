@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="com.typicode.jsonplaceholder" tests="3" time="3.135">
+  <testsuite name="updateExistingPost" id="d6af80fc-b6c4-4b32-853f-5f6cb1bf1f0e" timestamp="2021-02-22T09:51:20.632Z" tests="2" failures="0" errors="0" time="2.185">
+    <testcase name="id of updated post is not null" time="2.185" classname="ComTypicodeJsonplaceholder"/>
+    <testcase name="Status code is 200" time="2.185" classname="ComTypicodeJsonplaceholder"/>
+  </testsuite>
+  <testsuite name="getUpdatedPost" id="2fd25a69-8850-40c0-ba6c-2ca469066a94" timestamp="2021-02-22T09:51:20.632Z" tests="2" failures="1" errors="0" time="0.036">
+    <testcase name="Status code is 200" time="0.036" classname="ComTypicodeJsonplaceholder"/>
+    <testcase name="Response time is less than 20ms" time="0.036" classname="ComTypicodeJsonplaceholder">
+      <failure type="AssertionFailure" message="expected 36 to be below 20">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: fc468973-065f-44a3-bcfb-4bda8a7ba2b0.]]>
+        <![CDATA[Collection name: com.typicode.jsonplaceholder.]]>
+        <![CDATA[Request name: getUpdatedPost.]]>
+        <![CDATA[Test description: Response time is less than 20ms.]]>
+        <![CDATA[Error message: expected 36 to be below 20.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 36 to be below 20
+   at Object.eval sandbox-script.js:2:2).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="deleteUpdatedPost" id="5b4a1797-cac6-4332-937b-bef6e3a3cb8d" timestamp="2021-02-22T09:51:20.632Z" tests="1" failures="0" errors="0" time="0.914">
+    <testcase name="Hello world" time="0.914" classname="ComTypicodeJsonplaceholder"/>
+  </testsuite>
+</testsuites>
