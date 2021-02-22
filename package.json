@@ -1,0 +1,12 @@
+{
+  "name": "postman_tests",
+  "version": "1.0.0",
+  "description": "Simple project for portfolio",
+  "scripts": {
+    "postmanTests": "newman run ./com.typicode.jsonplaceholder.postman_collection.json -e com.typicode.jsonplaceholder.postman_environment.json"
+  },
+  "author": "VKontsov",
+  "dependencies": {
+    "newman": "^5.2.2"
+  }
+}
