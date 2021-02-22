@@ -1,0 +1,13 @@
+node {
+    stage ("tests") {
+        git branch:'develop', url: 'https://github.com/VKontsov-github/postman-tests.git'
+        bat 'npm install'
+        try {
+            bat 'npm run postmanTests'
+            currentBuild.result='SUCCESS'
+        } catch(Exception ex) {
+            currentBuild.result='FAILURE'
+        }
+        junit skipPublishingChecks: true, testResults: 'newman.xml'
+    }
+}
